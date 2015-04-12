@@ -1,10 +1,16 @@
 import numpy as np
 import matplotlib.pyplot as plt
-s= np.random.poisson(5,100000)
-count, bins, ignored = plt.hist(s, 19, normed=True)
+#some imports
+
+s= np.random.poisson(3,1000000)
+#create sample size N = 1,000,000 with distribution mean of 3
+
+count, bins, ignored = plt.hist(s, bins=100, range=(), normed=True)
+
 plt.xlabel("")
 plt.ylabel("")
-plt.title("Poisson distribution")
+plt.title("Histogram of Distribution")
+#some plot lables 
 plt.show()
 
         
