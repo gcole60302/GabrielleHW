@@ -122,12 +122,13 @@ plt.hist(mean, normed=True)
 plt.show()    
 #############
 
-TotalMean = [a,b,c,d,e,f]
-TotalVar = [a_v,b_v,c_v,d_v,e_v,f_v]
-Axis = np.arange(0,7,1)
+TotalMean = [a, b, c, d, e, f]
+TotalVar = [a_v, b_v, c_v, d_v, e_v, f_v]
+Axis = np.arange(0,6)
 plt.plot(Axis, TotalMean, marker='o', linestyle='None')
 plt.show()
-
+plt.plot(Axis, TotalVar, marker='o', linestyle='None')
+plt.show()
 
 
         
