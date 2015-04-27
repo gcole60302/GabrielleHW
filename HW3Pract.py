@@ -10,11 +10,10 @@ from scipy import stats
 plt.ion()
 
 #####################################
+x=11.93394592
 
-vects = np.linspace(0, 5,21)
-x,y = np.meshgrid(vects, vects)
-DistR = np.zeros((21, 21))
-for i in range(21):
-    for j in range(21):
-        DistR[i,j] = np.sqrt((x[10,10] - x[i,j])**2 +(y[10,10] - y[i,j])**2)
-
+MaxR = np.int8(np.ceil(x))
+if MaxR %2 == 0:
+    MaxR = MaxR + 1
+else:
+    MaxR = MaxR
